@@ -5,6 +5,11 @@ public class Product {
 	private double price;
 	private static int objCount=0;
 	
+	public static Product getProductInstance() {
+		Product p = new Product();
+		return p;
+	}
+	
 	public Product() {
 		objCount++;
 	}
@@ -54,7 +59,6 @@ public class Product {
 				+ "objCount = "+objCount+"]";
 	}
 
-	
 	
 	
 	
